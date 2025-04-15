@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نتائج تحاليل معمل السويس التخصصي - استعلم عن نتائج تحاليلك الطبية">
+    <meta name="keywords" content="معمل السويس التخصصي, نتائج تحاليل, تحاليل طبية, السويس">
+    <meta name="author" content="معمل السويس التخصصي">
+    <meta property="og:title" content="نتائج تحاليل معمل السويس التخصصي">
+    <meta property="og:description" content="استعلم عن نتائج تحاليلك الطبية من معمل السويس التخصصي">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB9klEQVR4Ae2WA4wcURSGd23btm3btm3btm3bNoLaQVHbtm3b/yZ9k8xmZ7M7d5O+5Ev25c7c/5z7zjkzMUFBQf8VkiQFgixQCGpAG+gDE2EWLIQVsBY2wCbYBjtgF+yBvbAP9sMBOAiH4AgchWNwHE7ASThlRA6G5X8hODgYIkA8yAhFoRY0g67QF0bBZFgAy2ANrIcNsBm2wnbYBbthL+yHA3AIDsMROArH4QScNDInDcEZOAvn4DxcgItwCS7DFbgK1+A63ICbcAtuwx24C/fgPjyAh/AIHsMTeArP4Dm8gJfwCl7DG3gL7+A9fICP8Ak+wxf4Ct/gO/yAn/AL/fL7B/yGP/AX/oEEEgcRICpEhOiQCBJCHEgISSApJIWkkAySQXJIASkgJaSC1JAa0kBaSAfpIQNkhIyQETJBZsgMWSArZIPskANyQk7IBbkhN+SBPJAf8kIByA8FoRAUhiJQGIpCUSgOxaA4lICSUApKQxkoA2WhLJSDclAeKkBFqAgVoRJUhspQBapCVagG1aE61ICaUBNqQW2oDbWhLtSFelAP6kMDaAgNoTE0hibQFJpCM2gOLaAFtIRW0BpaQxtoA22hHbSHDtAROkFn6AJdoRt0hx7QE3pBb+gNfaAv9IP+MAAGwiAYDENgKAyD4TACRsIoGA1jYCyMg/EwASbCJCP0fwFJXaMkj3pkWgAAAABJRU5ErkJggg==">
+    <title>معمل السويس التخصصي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            color: #2c3e50;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #34495e;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            color: #5d6d7e;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.7rem;
+            color: #34495e;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e5e8ed;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #2c3e50;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+            background-color: #ffffff;
+        }
+
+        input::placeholder {
+            color: #95a5a6;
+        }
+
+        button {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #2573a7 100%);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+        }
+
+        .footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>نتائج تحاليل معمل السويس التخصصي</h1>
+            <p>أدخل البيانات لعرض نتيجة التحاليل</p>
+        </div>
+        <form id="paramForm">
+            <div class="form-group">
+                <label for="param1">رقم المعمل (Lab ID)</label>
+                <input type="text" id="param1" name="param1" required 
+                       placeholder="أدخل رقم المعمل">
+            </div>
+            <div class="form-group">
+                <label for="param2">رقم الإنترنت (Internet ID)</label>
+                <input type="text" id="param2" name="param2" required
+                       placeholder="أدخل رقم الإنترنت المكتوب بالوصل">
+            </div>
+            <button type="submit">عرض النتيجة</button>
+        </form>
+        <div style="text-align: center; margin-top: 1rem; color: #7f8c8d; font-size: 0.9rem;">
+            البيانات المطلوبة موجودة بالوصل الذي تم استلامه بالمعمل
+        </div>
+        <div class="footer">
+            © 2025 معمل السويس التخصصي 
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('paramForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const param1 = document.getElementById('param1').value;
+            const param2 = document.getElementById('param2').value;
+            
+            // Redirect directly to the target URL with parameters
+            const finalUrl = `https://suezlab.tarqeem.net/results/reports/#/report/${encodeURIComponent(param1)}/${encodeURIComponent(param2)}`;
+            window.location.href = finalUrl;
+        });
+    </script>
+</body>
+</html> 
